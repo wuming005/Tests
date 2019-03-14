@@ -1,0 +1,54 @@
+@charset "utf-8";
+/* CSS Document */
+<style> 
+.menu a{ color: #999; text-decoration:none; font-family:'Droid Serif', serif; font-style:italic; font-size:18px} 
+.menu ul{list-style:none;} 
+
+.menu ul li{
+	float: left;
+	position: relative;
+	width: 80px;
+	text-align: left;
+	padding-top: 10px;
+	padding-right: 15px;
+	padding-bottom: 10px;
+	padding-left: 15px;
+	margin-right: 2px;
+	border-right-width: 3px;
+	border-right-style: solid;
+	border-right-color: #000;
+} 
+
+.menu ul li ul{
+	visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	
+	position: absolute;
+	padding-top: 5px;
+	left: -41px;
+	opacity: 0;
+	-webkit-opacity: 0;
+	border: 0px double #000;
+	transition: all .5s ease-in-out;
+} 
+
+.menu ul li ul li{
+	margin-left: 0px;
+	width: 150px;
+height:50px
+color:#999; 
+	background-color: #FFF;
+} 
+
+.menu li:hover a, 
+.menu li:hover{ color: #000; background-color: } 
+
+.menu ul li:hover ul, 
+.menu ul a:hover ul{visibility:visible;opacity: 1;} 
+
+.menu ul li:hover li, 
+.menu ul li:hover li a{ color: #000; background-color:;} 
+
+.menu ul li ul li:hover a, 
+.menu ul li ul li:hover{ color: #000; background-color:} 
+</style> 

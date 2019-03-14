@@ -1,0 +1,102 @@
+@charset "utf-8";
+#top {
+	height: 250px;
+	width: 1200px;
+	background-image: url(images/timg.jpg);
+	margin-right: auto;
+	margin-left: auto;
+}
+#biaoti {
+	background-color: #FFF;
+	height: 60px;
+	width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#zhongjian {
+	background-color: #FFF;
+	height: 500px;
+	width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#di {
+	height: 200px;
+	width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #990;
+}
+#zhongjian1 {
+	height: 750px;
+	width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#wenzi {
+	font-family: "隶书";
+	font-size: 80px;
+	color: #000;
+}
+
+#di1 {
+	background-color: #933;
+	height: 50px;
+	width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.ico01 {
+	display: block;
+	width: 40px;
+	height: 32px;
+	float: left;
+	background-image: url(%E7%AC%AC9%E7%AB%A0/images/ico01.png);
+	background-repeat: no-repeat;
+	margin-top: 0px;
+	margin-left: 0px;
+}
+#wenzi1 {
+	font-family: "宋体";
+	font-size: 35px;
+	color: #000;
+	text-decoration: blink;
+	text-align: right;
+}
+#zuomian {
+	height: 400px;
+	width: 720px;
+}
+#wenzi2 {
+	font-size: 15px;
+	color: #000;
+	line-height: 30px;
+}
+#miankuang {
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-top-color: #444;
+}
+.miankuang1 {
+	margin-top: 2px;
+	margin-bottom: 2px;
+	border-top-width: 2px;
+	border-bottom-width: 2px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #444;
+	border-bottom-color: #444;
+}
+#wenzi3 {
+	font-size: 24px;
+	color: #000;
+	text-decoration: blink;
+	text-align: center;
+}
+.meiyouxian {
+	color: #000;
+	clear: none;
+	text-decoration: none;
+}

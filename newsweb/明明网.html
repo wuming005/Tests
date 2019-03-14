@@ -1,0 +1,332 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>新闻网</title>
+<link href="CSS.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+@import url("CSS1.css");
+</style>
+</head>
+
+<body>
+<div id="top">
+  <table width="1202" height="225" border="0">
+    <tr>
+      <td width="461" height="137">&nbsp;</td>
+      <td width="408">&nbsp;</td>
+      <td width="319">&nbsp;</td>
+    </tr>
+    <tr>
+      <td height="82"><div id="wenzi">明   明   网</div></font></td>
+      <td><form action="#" method="get">
+        <font color="#000000">
+        <strong>
+<input name="search" type="radio" value="thissite" checked="checked" />
+新闻全文
+<input type="radio" name="search" value="theweb" />
+新闻标题 </strong></font><br />
+                <input type="text" name="q" size="30" id="searchfield" title="searchfield" />
+                <input type="submit" name="Search" value="明一下" alt="Search" id="searchbutton" title="Search" />
+            </form></td>
+      <td><script type="text/javascript">
+		var m_names = new Array("1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月");
+				var d_names = new Array("星期一", "星期二", "星期三", "星期四", "星期五", "星期六", "星期日");
+				
+				var currentTime = new Date()
+				var day = currentTime.getDay()
+				var month = currentTime.getMonth()
+				var date = currentTime.getDate()
+				var year = currentTime.getFullYear()
+				document.write( year + "年" + m_names[month]  + date  + "日 " + d_names[day]+"  " + "时间: ")
+				var currentTime = new Date()
+				var hours = currentTime.getHours()
+				var minutes = currentTime.getMinutes()
+				if (minutes < 10){
+				minutes = "0" + minutes
+				}
+				document.write(hours + ":" + minutes + " ")
+				if(hours > 11){
+				document.write("下午")
+				} else {
+				document.write("上午")
+				}
+			</script></td>
+    </tr>
+  </table>
+</div>
+<div id="biaoti">
+  <div  class="menu">
+  <ul> 
+<li><a href="#">首页</a></li> 
+<li><a href="#">时政</a> 
+<ul> 
+<li><a href="#">时政要闻</a></li> 
+<li><a href="#">评论频道</a></li> 
+<li><a href="#">核心解读</a></li> 
+<li><a href="#">法治中国</a></li> 
+<li><a href="#">理论频道</a></li> 
+<li><a href="#">海外观察</a></li>
+</ul> 
+</li> 
+<li><a href="#">资讯</a> 
+<ul> 
+<li><a href="#">独家</a></li> 
+<li><a href="#">地方频道</a></li> 
+<li><a href="#">中国日报精选</a></li> 
+<li><a href="#">中国日报专稿</a></li> 
+</ul> 
+</li> 
+<li><a href="#">财经</a> 
+<ul> 
+<li><a href="#">财经独家</a></li> 
+<li><a href="#">金融频道</a></li> 
+<li><a href="#">观察家</a></li>
+<li><a href="#">跨国公司</a></li>
+<li><a href="#">海外投资</a></li>
+<li><a href="#">财经专题</a></li>
+<li><a href="#">房产频道</a></li>
+</ul> 
+</li> 
+<li><a href="#">生活</a> 
+<ul> 
+<li><a href="#">娱乐</a></li> 
+<li><a href="#">电影</a></li> 
+<li><a href="#">时尚</a></li> 
+<li><a href="#">范儿</a></li>
+<li><a href="#">独舌</a></li> 
+<li><a href="#">文谈</a></li>
+<li><a href="#">书论</a></li> 
+</ul> 
+</li> 
+<li><a href="#">图片</a> 
+<li><a href="#">视频</a> 
+<li><a href="#">专栏</a> 
+<ul> 
+<li><a href="#">天下专栏</a></li> 
+<li><a href="#">站长专栏</a></li> 
+</ul> 
+</li> 
+<li><a href="#">双语</a>  
+<li><a href="#">漫画</a> 
+</ul>
+</div>
+</div>
+<div id="zhongjian">
+  <table width="1192" height="499" border="0">
+  <tr>
+    <td width="728"><table width="749" border="0">
+  <tr>
+    <td width="743" height="58"><div id="wenzi1"><a href="#" class="meiyouxian">视听盛宴！习近平带你领略千年丝绸之路</a></div></a></h3></td>
+  </tr>
+  <tr>
+    <td height="395"><iframe src="js.html" height="450" width="720" scrolling="no" marginheight="0" marginwidth="0" hspace="0" vspace="0" frameborder="0"></iframe></td>
+  </tr>
+</table>
+</td>
+    <td width="454"><table width="437" border="0">
+      <tr>
+        <td width="431" height="159"><script type="text/javascript">  
+    function tname(){  
+    var name=document.getElementById("userName").value;  
+    var nullname=document.getElementById("nullname");
+	var reg = /^[u4E00-u9FA5]+$/;  
+    if(name==null||name==""){  
+    nullname.innerHTML="用户名不能为空！";  
+    return false;  
+    }else  if(name.length<2||name.length>=20){  
+    nullname.innerHTML="用户名长度为2--20个字符长度！";  
+    return false; 
+	}else if(name[0].charCodeAt() <= 56 && name[0].charCodeAt() >=48 ){
+    nullname.innerHTML="用户名不能用数字";
+    }else{ 
+	return false;
+    nullname.innerHTML="";  
+    return true;  
+    }     
+    }  
+      
+    function ppwd(){  
+    var pwd=document.getElementById("password").value;  
+    var nullpwd=document.getElementById("nullpwd");  
+    if(pwd==null||pwd==""){  
+    nullpwd.innerHTML="密码不能为空！";  
+    return false;  
+    }else{  
+    nullpwd.innerHTML="";  
+    return true;  
+    }      
+    }  
+      
+   function ttpwd(){  
+     var pwd=document.getElementById("password").value;  
+       var tpwd=document.getElementById("tpwd").value;  
+       var nulltpwd=document.getElementById("nulltpwd");  
+       alert(pwd);  
+       alert(tpwd);  
+       if(tpwd==null||tpwd==""){  
+       nulltpwd.innerHTML="确认密码不能为空！！！";  
+       return false;  
+       }else if(tpwd!=pwd){  
+       nulltpwd.innerHTML="两次密码输入不一致";  
+       return false;  
+       }else{  
+       nulltpwd.innerHTML="";  
+       return true;  
+       }        
+   }      
+ 
+    </script>  
+  </head>
+  <body>
+  <center>  
+  <fieldset style="width:400px;">  
+  <legend>用户注册</legend>  
+  <form action="regUser" method="post">  
+  <table>  
+  <tr>  
+  <td>用户名</td>  
+  <td colspan="2"><input type="text" name="user.userName" class="w" id="userName" onblur="tname()"/></td>  
+  <td><div id="nullname"></div></td>  
+  </tr>  
+    
+  <tr>  
+  <td>密码</td>  
+  <td colspan="2"><input type="password" name="user.password" class="w" id="password" onblur="ppwd()"/></td>  
+  <td><div id="nullpwd"></div></td>  
+  </tr>  
+    
+  <tr>  
+  <td>确认密码</td>  
+  <td colspan="2"><input type="password" name="tpwd" class="w" id="tpwd" onblur="ttpwd()"/></td>  
+  <td ><div id="nulltpwd"></div></td>  
+  </tr>  
+    
+    
+  <tr>  
+  <td></td>  
+  <td><input type="button" value="提交" onclick="reg()"/></td>
+  <td><input type="reset" value="取消" onclick=""/></td>  
+  <td></td>  
+  </tr>  
+  </table>  
+  </form>  
+  </fieldset>  
+  </center>  </td>
+        </tr>
+      <tr>
+        <td height="319"><img src="images/761-160R40T410.jpg" width="434" height="314" /></td>
+        </tr>
+  </table>
+</td>
+  </tr>
+</table>
+</div>
+<div id="zhongjian1">
+  <table width="1200" height="703" border="0">
+    <tr>
+      <td width="768" height="689"><table width="768" height="692" border="0" id="miankuang">
+        <tr>
+          <td width="461" height="112" id="miankuang"><h3><a href="http://china.chinadaily.com.cn/2017-05/14/content_29337305.htm" atremote="1" target="_blank">&ldquo;一带一路&rdquo;国际合作高峰论坛开幕</a></h3>
+            <p>5月14日，&ldquo;一带一路&rdquo;国际合作高峰论坛开幕式在北京国家会议中心举行。</p>
+            <div></div></td>
+          <td width="297" id="miankuang"><img src="images/64006a47a4491a81fc9c06.jpg" width="299" height="116" /></td>
+        </tr>
+        <tr>
+          <td height="146"id="miankuang"><h3><a href="http://cn.chinadaily.com.cn/2017-05/13/content_29334566.htm" atremote="1" target="_blank">探访&ldquo;一带一路&rdquo;上的新疆集市 感受大巴扎的民族风情</a></h3>
+            <p>5月13日，各国记者跟随&ldquo;中外媒体走进&lsquo;丝绸之路经济带&rsquo;核心区&rdquo;主题采访活动抵达新疆乌鲁木齐国际大巴扎，感受浓郁的民族风情。</p></td>
+          <td id="miankuang"><img src="images/d8cb8a3d71831a814cd644.jpg" width="297" height="141" /></td>
+        </tr>
+        <tr>
+          <td id="miankuang"><h3><a href="http://cn.chinadaily.com.cn/2017-05/13/content_29334650.htm" atremote="1" target="_blank">钻石联赛上海站百米大战  中国&ldquo;飞人&rdquo;苏炳添夺冠</a></h3>
+            <p>5月13日晚，在国际田联钻石联赛上海站男子100米决赛中，中国选手苏炳添以10秒09的成绩获得冠军，创造了今年中国男子百米项目的最好成绩。</p></td>
+          <td id="miankuang"><img src="images/6609c93d70cf3bc7c5a7a4e8db00baa1cd112a0a.jpg" width="297" height="144" /></td>
+        </tr>
+        <tr>
+          <td id="miankuang"><h3><a href="http://world.chinadaily.com.cn/2017-05/13/content_29334372.htm" atremote="1" target="_blank">全球首例！拉脱维亚运动员完成无人机跳伞</a></h3>
+            <p>当地时间5月11日，拉脱维亚一名跳伞运动员完成了全球首个从无人机上跳伞的挑战。</p></td>
+          <td id="miankuang"><img src="images/d8cb8a3d71831a81401e34.jpg" width="300" height="132" /></td>
+        </tr>
+        <tr>
+          <td height="124" id="miankuang"><h3><a href="http://china.chinadaily.com.cn/2017-05/13/content_29328897.htm" atremote="1" target="_blank">图解：外媒盛赞&ldquo;一带一路&rdquo;</a></h3>
+            <p>&ldquo;一带一路&rdquo;国际合作高峰论坛5月14日-15日将在北京举行。届时，中国会再次成为世界瞩目的焦点。自&ldquo;一带一路&rdquo;倡议提出以来，国际媒体对此始终高度关注。</p></td>
+          <td id="miankuang"><img src="images/d8cb8a3d71831a80f70f02.jpg" width="297" height="122" /></td>
+        </tr>
+      </table></td>
+      <td width="427" id="miankuang" ><table width="427" height="679" border="0">
+        <tr>
+          <td height="324"><font size="+3" face="宋体"><a href="#" class="meiyouxian">领航“一带一路”</a></font>
+        <div id="wenzi2" > <a href="#" class="meiyouxian">李克强会见六国领导人同匈牙利总理会谈</a><br />
+          <ul>
+              <li><a href="zhongjian2youbu.html" target="new">张德江会见智利总统 </a><a href="zhongjian2youbu1.html" target="new">乌兹别克斯坦总统</a><br /></li>
+             <li> <a href="zhongjian2youbu2.html" target="new">王岐山会见老挝国家主席</a><br /></li>
+              <li><a href="zhongjian2youbu3.html" target="new">“一带一路”上的明珠：比雷埃夫斯港</a><br /></li>
+             <li> <a href="zhongjian2youbu4.html" target="new">国办印发《意见》 加快推进“多证合一”改革</a><br /></li>
+             <li> <a href="#">安娜：中国神经外科技术叹为观止</a><br /></li>
+             <li> <a href="#">携手起航，共赢丝路：中国准备好了！</a><br /></li>
+              <li><a href="#">“一带一路”国际产能和装备制造合作成果丰硕</a><br /></li>
+             <li><a href="#"> “一带一路”微纪录片《心相连，加油干！》</a><br />
+            </li>
+          </ul>
+      </div></td>
+        </tr>
+        <tr>
+          <td height="275"><table width="424" height="334" border="0" >
+            <tr>
+              <td width="126" height="110"><img src="images/448a5bd66d3f1a7f589401.jpg" width="115" height="100" /></td>
+              <td width="288"><h3><a href="http://column.chinadaily.com.cn/article.php?pid=28189" target="_blank">陈新光：中巴经济走廊，&ldquo;一带一路&rdquo;合作典范</a></h3>
+                <p>中巴经济走廊是数十年来两国兄弟关系的最新体现。</p></td>
+            </tr>
+            <tr>
+              <td><img src="images/f04da2daf68a1a77636a04.jpg" width="115" height="100" /></td>
+              <td><h3><a href="http://column.chinadaily.com.cn/article.php?pid=28136" target="_blank">杨飞：共商共建共享 &ldquo;一带一路&rdquo;推动全球合作共赢</a></h3>
+                <p>&ldquo;一带一路&rdquo;是各国的大合唱，不是中国的独唱</p></td>
+            </tr>
+            <tr>
+              <td height="103"><img src="images/f04da2daf68a1a7e0e8e13.jpg" width="115" height="100" /></td>
+              <td><h3><a href="http://column.chinadaily.com.cn/article.php?pid=28169" target="_blank">史宝银：&ldquo;花中皇后&rdquo;恋上&ldquo;帝乡&rdquo;南阳的背后</a></h3>
+                <p>南阳市被国家林业局、中国花卉协会命名为&ldquo;中国月季之乡&rdquo;。</p></td>
+            </tr>
+          </table></td>
+        </tr>
+      </table></td>
+    </tr>
+  </table>
+</div>
+<div id="di"><table width="1199" height="192" border="0">
+  <tr>
+    <td width="339" height="188"><table width="404" height="172" border="0" frame="rhs" bordercolor="#000000">
+  <tr>
+    <td width="398" id="wenzi3">关于我们</td>
+  </tr>
+  <tr>
+    <td height="119">明明网是国务院新闻办公室领导，中国外文出版发行事业局管理的国家重点新闻网站。本网通过10个语种11个文版，24小时对外发布信息，是明明进行国际传播、信息交流的重要窗口。</td>
+  </tr>
+</table></td>
+    <td width="400"><table width="357" height="177" border="0" frame="rhs" bordercolor="#000000">
+  <tr>
+    <td width="323" height="55" id="wenzi3">版权声明</td>
+  </tr>
+  <tr>
+    <td height="116">凡本网注明&ldquo;来源：明明网&rdquo;的所有作品，均为中国互联网新闻中心合法拥有版权或有权使用的作品，未经本网授权不得转载、摘编或利用其它方式使用上述作品。</td>
+  </tr>
+</table></td>
+    <td width="446"><table width="428" border="0" frame="rhs" bordercolor="#000000">
+  <tr>
+    <td width="422" height="51" id="wenzi3">联系方式</td>
+  </tr>
+  <tr>
+    <td height="123"><p align="center">电话：0086-10-88828000<br />
+      传真：0086-10-88828231<br />
+      媒体合作：0086-10-88828175<br />
+      品牌活动合作：0086-10-88828063<br />
+      广告合作：0086-10-88825964</p></td>
+  </tr>
+</table>
+</td>
+  </tr>
+</table>
+</div>
+<div id="di1" ><font size="+1" face="隶书">版权保护：本网登载的内容（包括文字、图片、多媒体资讯等）版权属明明网（中报国际文化传媒（北京）有限公司）独家所有使用。 未经中国日报网事先协议授权，禁止转载使用。</font></div>
+</body>
+</html>

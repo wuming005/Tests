@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script type="text/javascript">  
+    function tname(){  
+    var name=document.getElementById("userName").value;  
+    var nullname=document.getElementById("nullname");
+	var reg = /^[u4E00-u9FA5]+$/;  
+    if(name==null||name==""){  
+    nullname.innerHTML="用户名不能为空！";  
+    return false;  
+    }else  if(name.length<2||name.length>=10){  
+    nullname.innerHTML="用户名长度为2--10个字符长度！";  
+    return false; 
+	}else if(name[0].charCodeAt() <= 56 && name[0].charCodeAt() >=48 ){
+    nullname.innerHTML="用户名不能用数字";
+    }else{ 
+	return false;
+    nullname.innerHTML="";  
+    return true;  
+    }     
+    }  
+      
+    function ppwd(){  
+    var pwd=document.getElementById("password").value;  
+    var nullpwd=document.getElementById("nullpwd");  
+    if(pwd==null||pwd==""){  
+    nullpwd.innerHTML="密码不能为空！";  
+    return false;  
+    }else{  
+    nullpwd.innerHTML="";  
+    return true;  
+    }      
+    }  
+      
+   function ttpwd(){  
+     var pwd=document.getElementById("password").value;  
+       var tpwd=document.getElementById("tpwd").value;  
+       var nulltpwd=document.getElementById("nulltpwd");  
+       alert(pwd);  
+       alert(tpwd);  
+       if(tpwd==null||tpwd==""){  
+       nulltpwd.innerHTML="确认密码不能为空！！！";  
+       return false;  
+       }else if(tpwd!=pwd){  
+       nulltpwd.innerHTML="两次密码输入不一致";  
+       return false;  
+       }else{  
+       nulltpwd.innerHTML="";  
+       return true;  
+       }        
+   }      
+ 
+    </script>  
+<style type="text/css">
+#main {
+	height: 600px;
+	width: 500px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 20px;
+	text-align: center;
+}
+</style>
+</head>
+<body>
+<div id="main">
+<form action="regUser" method="post">  
+<table width="464">  
+<tr>  
+<td width="72">用户名</td>  
+<td colspan="2"><input type="text" name="user.userName" class="w" id="userName" onblur="tname()"/></td>  
+<td width="186"><div id="nullname"></div></td>  
+</tr>  
+  
+<tr>
+  <td><font size="3">真实姓名</font></td>
+  <td colspan="2"><input type="text" /></td>
+  <td>&nbsp;</td>
+</tr>
+<tr>  
+<td>密码</td>  
+<td colspan="2"><input type="password" name="user.password" class="w" id="password" onblur="ppwd()"/></td>  
+<td><div id="nullpwd"></div></td>  
+</tr>  
+  
+<tr>  
+<td>确认密码</td>  
+<td colspan="2"><input type="password" name="tpwd" class="w" id="tpwd" onblur="ttpwd()"/></td>  
+<td ><div id="nulltpwd"></div></td>  
+</tr>  
+  
+  
+<tr>  
+<td></td>  
+<td width="94"><input type="button" value="提交" onclick="reg()"/></td>
+<td width="92"><input type="reset" value="取消" onclick=""/></td>  
+<td></td>  
+</tr>  
+</table>  
+</form>
+</div> 
+</body>
+</html>
