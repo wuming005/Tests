@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>加入我们</title>
+<script type="text/javascript" src="../JS/checkForm.js"  charset="gbk">
+</script>
+<style type="text/css">
+@import url("../CSS/css1.css");
+
+#main {
+	height: 800px;
+	width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 150px;
+}
+ #code  
+ {  
+     font-family:Arial;  
+     font-style:italic;  
+     font-weight:bold;  
+      border:0;  
+      letter-spacing:2px;  
+      color:blue;  
+ }  
+</style>
+</head>
+
+<body>
+<div id="biaoti">
+  <div class="top1"><ul class="nav">
+    <li><a class="bi" href="../index.html">首页<span>首页</span></a></li>
+    <li><a class="bi" href="jianjie.html">班级简介<span>班级简介</span></a></li>
+    <li><a class="bi" href="xiangce.html">班级相册<span>班级相册</span></a></li>
+    <li><a class="bi" href="jiaruwomen.html">加入我们<span>加入我们</span></a></li>
+    <li><a class="bi" href="kechengbiao.html">课程表<span>课程表</span></a></li>
+    <li><a class="bi" href="liuyan.html">留言<span>留言</span></a></li>
+
+  </ul>
+  </div>
+</div>
+<div id="main">
+<form name="register" onSubmit="return check()">
+  <div align="center">
+    <table width="464" border="0" >
+      <tr>
+        <td height="33" colspan="5"><h3 align="center">欢迎加入我们15级网络工程</h3></td>
+        </tr>
+      <tr bgcolor="#CC9933">
+        <td width="145"height="33" align="right"><font size="3">用户名称</font></td>
+        <td colspan="4"><input type="text" name=regID></td>
+        </tr>
+      <tr bgcolor="#CC9933">
+        <td height="33" align="right"><font size="3">真实姓名</font></td>
+        <td colspan="4"><input type="text" name=regName /></td>
+        </tr>
+      <tr bgcolor="#CC9933">
+        <td height="33" align="right"><font size="3">出生时间</font></td>
+        <td colspan="2">
+          <select>
+            <option value="1989年">1989年</option>
+            <option value="1989年">1989年</option>
+            <option value="1989年">1989年</option>
+          </select>    </td>
+        <td width="84">
+          <select>
+            <option value="1月">1月</option>
+            <option value="2月">2月</option>
+            <option value="3月">3月</option>
+            <option value="……月">……月</option>
+            <option value="11月">11月</option>
+            <option value="11月">11月</option>
+          </select>   </td>
+        <td width="120">
+          <select>
+            <option value="1日">1日</option>
+            <option value="2日">2日</option>
+            <option value="……日">……日</option>
+            <option value="29日">29日</option>
+            <option value="30日">30日</option>
+            <option value="31日">31日</option>
+          </select>    </td>
+        </tr>
+      <tr bgcolor="#CC9933" >
+        <td  height="33" align="right"><font size="3">性别</font>    </td>
+        <td width="51" align="right"><font size="3">男</font></td>
+        <td width="42"><input name="ueser_sex" type="radio" checked="checked" /></td>
+        <td align="right"><font size="3">女</font></td>
+        <td><input type="radio" name="ueser_sex"/></td>
+        </tr>
+      <tr bgcolor="#CC9933">
+        <td height="33"  align="right"><font size="3">登陆密码</font></td>
+        <td colspan="4"><input type="password" name=initial size=20></td>
+        </tr>
+      <tr bgcolor="#CC9933">
+        <td height="33" align="right"><font size="3">确认密码</font></td>
+        <td colspan="4"><input type="password" name=verify size=15></td>
+        </tr>
+      <tr bgcolor="#CC9933">
+        <td  height="33" align="right"><font size="3">E-mail</font></td>
+        <td colspan="4"><input type="text" name="emailadd"></td>
+        </tr>
+      <tr bgcolor="#CC9933">
+        <td  height="33"align="right"><font size="3">手机</font></td>
+        <td colspan="4"><input type="text" name=cellphone></td>
+        </tr>
+      <tr bgcolor="#CC9933">
+        <td  height="33" align="right"><font size="3">个人简介</font></td>
+        <td colspan="4"><textarea name="textarea" cols="20" rows="4">
+</textarea></td>
+      </tr>
+      
+      <tr>
+        <td align="right" bgcolor="#CC9933">请输入验证码</td>
+        <td colspan="4" bgcolor="#CC9933"><input type = "text" id = "checkCode" name="checkCode" size="10"/>
+          <input type = "button" id="code" onclick="createCode()"/></td>
+      </tr>
+      <tr>
+        <td bgcolor="#CC9933"></td>
+        <td colspan="4" bgcolor="#CC9933"><input type="submit" name="submit" value="确定" onclick = "validate()">
+          <input type="reset" name="reset" value="重置"></td>
+      </tr>
+    </table>
+  </div>
+
+</form>
+</div>
+
+<div id="bottom">
+  <p>关于我们 联系我们：1504655xxxx</p>
+  <p>版权所有 © 天津理工大学 聋人工学院 2015级网络工程1班 20155686 王明明    </p>
+  <p>xxxxxx@163.com</p>
+</div>
+</body>
+</html>

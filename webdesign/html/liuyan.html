@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>留言</title>
+  <link href="../CSS/css.css" rel="stylesheet" type="text/css" />
+  <style type="text/css">
+    @import url("../CSS/css1.css");
+    </STYLE>
+
+
+<script type="text/javascript"  src="../JS/checkForm - liuyan.js"  charset="gbk">
+</script>
+<style type="text/css">
+#main {
+	height: 800px;
+	width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 250px;
+}
+#code {     font-family:Arial;  
+     font-style:italic;  
+     font-weight:bold;  
+      border:0;  
+      letter-spacing:2px;  
+      color:blue;  
+}
+</style>
+</head>
+
+<body>
+<div id="biaoti">
+  <div class="top1"><ul class="nav">
+    <li><a class="bi" href="../index.html">首页<span>首页</span></a></li>
+    <li><a class="bi" href="jianjie.html">班级简介<span>班级简介</span></a></li>
+    <li><a class="bi" href="xiangce.html">班级相册<span>班级相册</span></a></li>
+    <li><a class="bi" href="jiaruwomen.html">加入我们<span>加入我们</span></a></li>
+    <li><a class="bi" href="kechengbiao.html">课程表<span>课程表</span></a></li>
+    <li><a class="bi" href="liuyan.html">留言<span>留言</span></a></li>
+
+  </ul>
+  </div>
+</div>
+<div id="main">
+<form name="register" onSubmit="return check()">
+  <div align="center">
+    <table width="464" border="1" >
+      <tr>
+        <td height="33" colspan="5"><h3 align="center">欢迎吐槽我们15级网络工程</h3></td>
+        </tr>
+      <tr>
+        <td width="145"height="33" align="right" bgcolor="#CC9933"><font size="3">用户名称</font></td>
+        <td width="297" colspan="4" bgcolor="#CC9933"><input type="text" name=regID></td>
+        </tr>
+      <tr>
+        
+        </tr>
+      <tr>
+        <td  height="33" align="right" bgcolor="#CC9933"><font size="3">E-mail</font></td>
+        <td colspan="4" bgcolor="#CC9933"><input type="text" name="emailadd"></td>
+        </tr>
+      <tr>
+        <td  height="33"align="right" bgcolor="#CC9933"><font size="3">手机</font></td>
+        <td colspan="4" bgcolor="#CC9933"><input type="text" name=cellphone></td>
+        </tr>
+      <tr>
+        <td  height="33" align="right" bgcolor="#CC9933"><font size="3">留言</font></td>
+        <td colspan="4" bgcolor="#CC9933"><textarea name="textarea" cols="20">
+    </textarea></td>
+        </tr>
+      
+      <tr>
+        <td bgcolor="#CC9933"><div align="right">请输入验证码</div></td>
+        <td colspan="4" bgcolor="#CC9933"><input type = "text" id = "checkCode" name="checkCode" size="10"/>
+          <input type = "button" id="code" onclick="createCode()"/></td>
+      </tr>
+      <tr>
+        <td bgcolor="#CC9933"></td>
+        <td colspan="4" bgcolor="#CC9933"><input type="submit" name="submit" value="确定" onclick = "validate()">
+          <input type="reset" name="reset" value="重置"></td>
+        </tr>
+    </table>
+  </div>
+
+</form>
+</div>
+<div id="bottom">
+  <p>关于我们 联系我们：1504655xxxx</p>
+  <p>版权所有 © 天津理工大学 聋人工学院 2015级网络工程1班 20155686 王明明    </p>
+  <p>xxxxxx@163.com</p>
+</div>
+</body>
+</html>
